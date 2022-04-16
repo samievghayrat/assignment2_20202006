@@ -1,5 +1,7 @@
 #include "array.h"
 #include <iostream>
+#include <bits/stdc++.h>
+
 using namespace std;
 
 double maximum_value(double *vals, size_t n)
@@ -41,4 +43,27 @@ double maximum_three_values(double *vals, size_t n, double *value1, double *valu
 		}
 	}
 	return 0;
+}
+
+
+double biggest_k_values(double* vals, size_t n, size_t k){
+
+
+	return 0;
+}
+
+double maximum(double* vals, size_t n, size_t k){
+
+	sort(vals, vals+n);
+	double result;
+	double reference = 0;
+		for (size_t i=0; i<k; i++){
+			if (vals[i]> reference){
+				reference = vals[i];
+				result = reference;
+				cout<<result<<endl;
+			}
+		}
+	
+	return result;
 }
